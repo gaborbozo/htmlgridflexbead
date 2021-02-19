@@ -1,43 +1,99 @@
-body{
-    font-family: 'Nerko One', cursive;
+.navbar {
+  min-height: 50px;
 }
 
-img:hover{
-    opacity: 0.3;
+.navitem {
+  text-decoration: none;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: #4b4b4b;
+  font-weight: bolder;
 }
 
-ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.navitem:hover {
+  color: #fac896;
+}
+
+.mainIndex {
+  display: block;
+}
+
+@media (max-width: 449px) {
+  .mainIndex {
+    margin-left: 50%;
   }
-
-table{
-    font-weight: bold;
-    font-family: 'Roboto Slab', serif;
-    border-collapse: collapse;
-    width: 100%;
-    border: 5px ridge black;
-}
-  
-td, th{
-    padding: 8px;
-    border: 3px solid #000000;
 }
 
-table th{
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #000000;
-    color: white;
+@media (min-width: 450px) {
+  .mainIndex {
+    margin-left: 30%;
+  }
 }
 
-a:hover{
-    font-size: 125%;
+@media (min-width: 800px) {
+  .mainIndex {
+    margin-left: 20%;
+  }
 }
 
-a{
-    text-decoration: none;
-    color: yellowgreen;
+@media (min-width: 1500px) {
+  .mainIndex {
+    margin-left: 10%;
+  }
 }
+
+.sidebar {
+  position: fixed;
+}
+
+@media (max-width: 449px) {
+  .sidebar {
+    width: 50%;
+  }
+}
+
+@media (min-width: 450px) {
+  .sidebar {
+    width: 30%;
+  }
+}
+
+@media (min-width: 800px) {
+  .sidebar {
+    width: 20%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .sidebar {
+    width: 10%;
+  }
+}
+
+.sideitem {
+  text-decoration: none;
+  font-size: 1.3rem;
+  letter-spacing: -1.5px;
+  color: #4b4b4b;
+  font-weight: bolder;
+}
+
+.sideitem:hover {
+  color: #fae196;
+}
+
+#comments {
+  border-collapse: separate;
+  border-spacing: 0.1em;
+}
+
+.navelements a {
+  margin-right: 0.1em;
+}
+
+.form label {
+  font-weight: bolder;
+  font-size: 1.3em;
+  letter-spacing: -1.5px;
+}
+/*# sourceMappingURL=style.css.map */

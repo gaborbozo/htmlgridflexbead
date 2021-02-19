@@ -1,31 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<title>Galéria</title>
 
-    <style>
-        body{
-            font-size: 150%;
-            text-align: center;
-            background-color: rgb(25, 200, 0);;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        div div:hover {
-            background-color: rgb(25, 100, 0);
-            font-size: 155%;
-        }
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<link rel="stylesheet" href="./css/style.css">
 
-        a{
-            text-decoration: none;
-        }
-    </style>
-</head>
-<body>
-    <div style="margin: 25px auto; max-width: 500px; max-height: 200px; background-color: rgb(25, 150, 0);">
-        <div><h1><a href="flex.html">Flexbox</a></h1></div>
-        <div><h1><a href="grid.html">Grid Layout</a></h1></div>
+<script src="./js/index.js"></script>
+
+<body style="background-color: rgb(200, 200, 200);">
+
+<!-- Navbar -->
+<div class="navbar">
+  <div class="navelements">
+    <a href="index.html" class="navitem">Galéria</a>
+    <a href="comment.html" class="navitem">Vélemények</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="mx-1 sidebar">
+  <h4 class=""><h1>Feltöltők</h1></h4>
+  <div id="sideelements">
+
+  </div>
+</nav>
+
+<div class="mainIndex">
+
+  <div class="d-flex flex-wrap justify-content-around" id="albums"></div>
+
+  <footer>
+    <div class="">
+      <h4>Made By Bozó Gábor</h4>
     </div>
+
+    <div class="">
+      <p>2020.02.19</p>
+    </div>
+  </footer>
+
+</div>
+
 </body>
 </html>
